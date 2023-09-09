@@ -1,0 +1,851 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+:root {
+    --clr-violet: #8B48BF;
+    --clr-sky-blue: #3CDDF3;
+    --clr-dark-greyish: #1E1E26;
+    --clr-dark-blue: #232851;
+    --clr-light-gray: rgb(249, 249, 249);
+    --clr-white: #FFF;
+    --font-family: 'Be Vietnam Pro', sans-serif;
+    --transition: all 0.3s linear;
+    --border-radius: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img:not(.nav-logo) {
+    width: 100%;
+    display: block;
+}
+
+/* Sportit main section - Geraldine */
+
+.btn {
+    background-color: var(--clr-violet);
+    color: var(--clr-light-gray);
+    border-radius: var(--border-radius);
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    transition: var(--transition);
+    cursor: pointer;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+    background-color: #8b48bfb3;
+    transform: scale(0.98);
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+    background-color: var(--clr-white);
+}
+
+.navbar {
+    background-color: var(--clr-white);
+}
+
+.nav-logo {
+    cursor: pointer;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+.nav-toggle {
+    font-size: 2.1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.nav-toggle:hover {
+    transition: var(--transition);
+}
+
+.fa-bars {
+    color: var(--clr-dark-greyish);
+}
+
+.fa-x {
+    color: #f46548;
+}
+
+.nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+    background-color: var(--clr-white);
+}
+
+.nav-links a {
+    color: var(--clr-dark-greyish);
+}
+
+.nav-links li {
+    padding: 1.12rem 2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.nav-links li:hover {
+    background-color: var(--clr-sky-blue);
+    padding-left: 3.5rem;
+    font-weight: 700;
+}
+
+.navbar-btn {
+    display: none;
+}
+
+.show-links {
+    height: 280px;
+}
+
+.main-info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 1rem 0
+}
+
+.main-info-section img {
+    width: 85%;
+    align-self: center;
+}
+
+.main-info {
+    margin: 4rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-info h1 {
+    color: var(--clr-dark-blue);
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+.main-info p {
+    text-align: right;
+    margin: 1rem 0;
+}
+
+.main-info .btn {
+    align-self: flex-end;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* End of Sportit main section - Geraldine */
+
+/*Diether's Section 3 CSS*/
+
+.prosTitle {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 1rem 2.5rem 0 1.5rem;
+    background-color: var(--clr-sky-blue);
+    color: var(--clr-white);
+}
+
+.prosTitleH2 {
+    font-size: 2rem;
+    padding-top: 1.8rem;
+}
+
+.prosTitleP {
+    font-size: 0.95rem;
+    margin: 3.5rem 0 3rem;
+}
+
+.prosSectionTop {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 4rem 0 0;
+}
+
+.prosMainContainer {
+    display: flex;
+    margin-left: 2rem;
+    flex-direction: column;
+}
+
+.prosCompanyTitleContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.prosNumber {
+    border-radius: 2rem;
+    background: var(--clr-violet);
+    width: 65px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-white);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.prosCompanyWide {
+    padding: 0.65rem 2rem;
+    margin-left: -1.2rem;
+    color: #323851;
+    background-color: rgba(139, 72, 191, 0.30);
+    font-size: 1rem;
+    font-weight: 600;
+    min-width: 88vw;
+}
+
+.prosCompanyLorem {
+    padding: 2.3rem 0.7rem 2.3rem 0.8rem;
+    color: #B3B2B7;
+    line-height: 1.5rem;
+    min-width: 88vw;
+}
+
+/*End of Diether's Section 3 CSS*/
+
+/*Start of Diether's Section 4 CSS*/
+
+.bestSectionTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.cardContainer {
+    background-color: #FAFAFA;
+}
+
+.mainCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.userImgContainer {
+    width: 15%;
+    position: relative;
+    top: 2.2rem;
+}
+
+.cardPersonName {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: #3F4868;
+    margin: 3.5rem 0 0;
+}
+
+.cardDescription {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    color: #B9B9C1;
+    margin: 1.8rem;
+}
+
+.btnAlign {
+    display: flex;
+    justify-content: center;
+}
+
+.best .btnAlign .btn {
+    padding: 1rem 3.5rem;
+    margin-bottom: 2.7rem;
+}
+
+.getToKnow {
+    background-color: var(--clr-sky-blue);
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.getToKnowTitle {
+    font-size: 2.7rem;
+    text-align: center;
+    color: var(--clr-white);
+    font-weight: 500;
+}
+
+.btnSectionFour2nd {
+    background-color: #232C50;
+    color: #f9f9f9;
+    width: 140px;
+    text-align: center;
+}
+
+.cards-btn {
+    margin-top: 2rem;
+}
+
+.cards-func {
+    display: none;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.show-cards {
+    display: contents;
+    transition: var(--transition);
+}
+
+/*End of Diether's Section 4 CSS*/
+
+/* Footer section - Geraldine */
+
+footer {
+    background-color: var(--clr-dark-greyish);
+    display: flex;
+    flex-direction: column;
+    padding: 1.7rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.footer-col {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.footer-form form {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.footer-form input {
+    padding: 1rem 1.3rem;
+    border-radius: 3.13rem;
+    width: 300px;
+    border: transparent;
+}
+
+input:focus {
+    outline: 3.5px solid var(--clr-violet);
+}
+
+.submit-btn {
+    border: none;
+    padding: 0rem 1.7rem;
+}
+
+.submit-btn:hover {
+    background-color: #ca87fdb3;
+}
+
+.footer-links-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 6rem;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links li {
+    padding: 0.3rem;
+}
+
+.footer-links a {
+    color: var(--clr-light-gray);
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--clr-sky-blue)
+}
+
+.footer-social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.7rem;
+}
+
+.footer-social-links ul {
+    display: flex;
+    width: 360px;
+    justify-content: space-between;
+}
+
+.fa-brands {
+    color: var(--clr-light-gray);
+    font-size: 1.4rem;
+    transition: var(--transition);
+}
+
+.fa-brands:hover {
+    transform: scale(1.2);
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-youtube:hover {
+    color: #c4302b;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-pinterest:hover {
+    color: #c8232c;
+}
+
+.fa-instagram:hover {
+    color: #C13584;
+}
+
+.footer-social-links .footer-logo {
+    width: 110px;
+    margin: 3.4rem 0 1rem;
+}
+
+.copyright p {
+    color: #8C8C94;
+    font-size: 0.78rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+/* End of Footer section - Geraldine */
+
+/* Queries section */
+
+@media screen and (min-width: 1300px) {
+
+    .prosTitle {
+        padding: 3rem 15vw;
+    }
+
+    footer {
+        padding: 4rem;
+    }
+
+    .footer-content {
+        gap: 6rem;
+        padding: 0;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-col:nth-child(1) {
+        flex-direction: row;
+        gap: 8rem;
+    }
+
+    .footer-links-container {
+        gap: 13rem;
+    }
+
+    .footer-form {
+        order: 2;
+    }
+
+    .footer-col:nth-child(2) {
+        order: -1;
+        align-items: center;
+    }
+
+    .footer-social-links {
+        flex-direction: column-reverse;
+    }
+
+    .footer-social-links .footer-logo {
+        margin: -0.5rem 0 2.5rem;
+        align-self: flex-start;
+    }
+
+    .footer-social-links ul {
+        width: 140px;
+        margin-top: 1rem;
+    }
+
+    .footer-links li {
+        width: 120px;
+    }
+
+    .copyright {
+        width: 100%;
+        align-self: flex-end;
+        max-width: 1190px;
+        margin: 0 auto;
+    }
+
+    .copyright p {
+        text-align: right;
+        margin: 0;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    /* main section - Geraldine */
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        height: auto;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
+    .nav-links ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav-links li {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        transition: var(--transition);
+    }
+
+    .nav-links li:hover {
+        padding-left: 0;
+        background-color: var(--clr-white);
+        font-weight: 400;
+    }
+
+    .nav-links a:hover {
+        color: rgba(36, 46, 82, 0.6);
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+
+    .main-info-section {
+        flex-direction: row;
+        gap: 4rem;
+        min-height: calc(100vh - 100px);
+        align-items: center;
+    }
+
+    .main-info-section img {
+        width: 50%;
+    }
+
+    .main-info {
+        width: 100%;
+        margin: 4rem 0;
+    }
+
+    /* End of main section - Geraldine */
+
+    /*Diether's Section 3 CSS*/
+
+    .pros {
+        background-color: var(--clr-light-gray);
+    }
+
+    .prosTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 6rem;
+        background-color: var(--clr-violet);
+    }
+
+    .prosTitleH2 {
+        color: var(--clr-white);
+        font-size: 2rem;
+        font-weight: 700;
+        padding-top: 0;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prosTitleP {
+        color: var(--clr-white);
+        width: 45%;
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .prosSectionTop {
+        display: flex;
+        justify-content: center;
+        margin-left: 3rem;
+        gap: 3rem;
+    }
+
+    .prosMainContainer {
+        padding: 0;
+        margin: 0;
+    }
+
+    .prosNumber {
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .prosCompanyWide {
+        color: #323851;
+        background-color: rgba(139, 72, 191, 0);
+        font-size: 1.15rem;
+        min-width: 100%;
+        margin-left: -1.4rem;
+    }
+
+    .prosCompanyLorem {
+        color: #B3B2B7;
+        font-size: 0.9rem;
+        font-weight: 500;
+        min-width: 30vw;
+        padding: 1rem 0.7rem;
+        margin-left: 1.5rem;
+    }
+
+    /*End of Diether's Section 3 CSS*/
+
+    /*Start of Diether's Section 4 CSS*/
+
+    .bestSectionTitle {
+        margin: 3rem 0;
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: #242E53;
+        font-weight: 700;
+    }
+
+    .cardsAlignment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .mainCard {
+        background-color: #FAFAFA;
+        padding-bottom: 0.7rem;
+        transition: var(--transition);
+    }
+
+    .mainCard:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .userImgContainer {
+        width: 25%;
+        position: static;
+        margin-top: 2.5rem;
+    }
+
+    .cardPersonName {
+        font-size: 1.2rem;
+        color: #3F4868;
+        margin: 2rem 0;
+    }
+
+    .cardDescription {
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: center;
+        font-weight: 400;
+        color: #B9B9C1;
+        margin: 2rem;
+    }
+
+    .getToKnow {
+        background-color: var(--clr-violet);
+        padding: 3.5rem 2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .getToKnowTitle {
+        font-size: 2rem;
+        width: 500px;
+        text-align: left;
+    }
+
+    .btnSectionFour2nd {
+        background-color: var(--clr-white);
+        color: var(--clr-dark-greyish);
+        transition: var(--transition);
+    }
+
+    .btnSectionFour2nd:hover {
+        background-color: var(--clr-dark-greyish);
+        color: var(--clr-white);
+    }
+
+    .best .btnAlign {
+        margin-top: 2.5rem;
+    }
+
+    /*End of Diether's Section 4 CSS*/
+
+    /* Footer Section - Geraldine */
+
+    .footer-content {
+        flex-direction: row;
+        padding: 2rem;
+        justify-content: space-evenly;
+    }
+
+    .footer-social-links ul {
+        width: 280px;
+    }
+
+    /* End of Footer Section - Geraldine */
+}
+
+@media screen and (min-width: 992px) {
+    /* Main page - Geraldine */
+
+    .main-info h1 {
+        font-size: 3rem;
+    }
+
+    .main-info p {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .main-info .btn {
+        font-size: 0.97rem;
+        margin-top: 1.2rem;
+    }
+
+    .navbar-btn {
+        display: block;
+        font-size: 1rem;
+    }
+
+    /* End of Main page - Geraldine */
+
+    /* Pros and best section -  Diether*/
+
+    .prosSectionTop {
+        margin: 0 3rem;
+    }
+
+    .prosTitleH2 {
+        font-size: 2.28rem;
+    }
+
+    .prosTitleP {
+        font-size: 1rem;
+    }
+
+    .prosMainContainer {
+        width: 500px;
+    }
+
+    .cardsAlignment {
+        flex-direction: row-reverse;
+    }
+
+    .best .btnAlign {
+        display: none;
+    }
+
+    .best {
+        max-width: 85vw;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 5rem;
+    }
+
+    .cards-func {
+        display: contents;
+    }
+
+    .userImgContainer {
+        width: 18%;
+    }
+
+    .getToKnow {
+        justify-content: space-around;
+    }
+
+    .getToKnowTitle {
+        width: 500px;
+        font-size: 2.2rem;
+    }
+
+    /* End of Pros and best section -  Diether*/
+}
+
+/* End of Queries section */
